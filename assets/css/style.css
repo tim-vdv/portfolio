@@ -6,6 +6,11 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/*CUSTOM*/
+.icon-box img{
+  height: 40px;
+  padding-right: 10px;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -20,13 +25,25 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/bg-mountains2.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  background: #000; /* Donkere overlay kleur */
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.5; /* Aanpassen naar de gewenste doorzichtigheid */
 }
 
 @media (min-width: 1024px) {
